@@ -1,8 +1,8 @@
 string configurationNotecardName = "Slink.Config";
 key notecardQueryId;
 integer notecardLine;
-string textureLayer;
-string textureUUID;
+list itemConfiguration=[];
+integer itemConfigurationCount=0;
 
 // Level
 // 0 - Error
@@ -12,6 +12,13 @@ string textureUUID;
 // 4 - Extreme Debug
 integer defaultLevel=3;
 list Levels=["Error","Warning","Info","Debug","Extreme Debug"];
+
+Initialization()
+{
+    itemConfiguration=[];
+    itemConfigurationCount=0;
+    ReadConfiguration();    
+}
 
 OwnerSay(integer Level, string Procedure, string Message) 
 {
@@ -38,15 +45,27 @@ ProcessConfiguration(string data) {
         OwnerSay(3,"ProcessConfiguration", data);
         if(data != "")
         {
-            if (llList2String(llParseString2List(data,[","],[" "]),0)==textureLayer)
-            {
-                OwnerSay(3,"ProcessConfiguration", "found "+textureLayer);
-                llSetLinkPrimitiveParamsFast(LINK_THIS, [PRIM_TEXTURE,(integer)llList2String(llParseString2List(data,[","],[" "]),1), textureUUID, <1.0, 1.0, 0.0>, ZERO_VECTOR, 0.0]);
-            };
+            itemConfiguration = (itemConfiguration=[]) + itemConfiguration + data;
+            ++itemConfigurationCount;
+            OwnerSay(3,"ProcessConfiguration", llList2String(llParseString2List(data,[","],[" "]),0));
         };
         ++notecardLine;
         notecardQueryId = llGetNotecardLine(configurationNotecardName, notecardLine);
     }; 
+}
+ProcessTexture(string textLayer, string textUUID) 
+{
+    integer i;
+    OwnerSay(3,"ProcessTexture", textLayer);
+    for (i=0;i<itemConfigurationCount;i++)
+    {
+        OwnerSay(3,"ProcessTexture", textLayer+" "+llList2String(llList2List(itemConfiguration,i,i),0));
+        if (llList2String(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),0)==textLayer)
+        {
+            OwnerSay(3,"ProcessTexture", "found "+textLayer+" "+llList2String(llList2List(itemConfiguration,i,i),1));
+            llSetTexture((key)textUUID, llList2Integer(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),1)  );
+        };
+    };
 }
 default
 {
@@ -57,6 +76,7 @@ default
         {
             OwnerSay(3,"default.changed","I have been changeded!");
             llResetScript();
+            Initialization();
         }
     }
     attach(key id)
@@ -65,6 +85,7 @@ default
         {
             OwnerSay(3,"default.attach","I have been attached!");
             llResetScript();
+            Initialization();
         }
         else
         {
@@ -74,6 +95,7 @@ default
     state_entry()
     {
         OwnerSay(3,"default.state_entry","listening!");
+        Initialization();
         integer channel = (integer)("0x"+llGetSubString((string)llGetOwner(),-16,-1));
         llListen(channel,"","","");
     }
@@ -82,9 +104,8 @@ default
     {
         list message =  llParseString2List(msg,[","],[" "]);
         OwnerSay(3,"default.listen",msg);
-        textureLayer=llList2String(message,0);
-        textureUUID=llList2String(message,1);
-        ReadConfiguration();    
+        ProcessTexture(llList2String(message,0),llList2String(message,1));
+        
     }
     dataserver(key request_id, string data)
     {
