@@ -55,7 +55,6 @@ enableButtons()
     }
 }
 
-integer breastsTrans = 1;
 default
 {
     state_entry()
