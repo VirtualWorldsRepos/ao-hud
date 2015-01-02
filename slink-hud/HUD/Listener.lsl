@@ -12,7 +12,9 @@ integer notecardLine;
 list itemConfiguration=[];
 integer itemConfigurationCount=0;
 integer defaultNail;
-integer toggleNail=TRUE;
+integer defaultTattoo;
+integer toggleNail=FALSE;
+integer toggleTattoo=FALSE;
 
 // Level
 // 0 - Error
@@ -64,7 +66,8 @@ CycleNails(string command)
     {
         string configurationItem=llList2String(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),0);
         integer face=llList2Integer(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),1);
-            OwnerSay(3,"CycleNails",configurationItem);
+        OwnerSay(3,"CycleNails",configurationItem);
+        //Identify default nail
         if (llGetSubString(configurationItem,-5,-1)=="-nail")
         {
             if (llList2Float(llGetLinkPrimitiveParams(LINK_THIS,[PRIM_COLOR, face]),1)==1.0)
@@ -73,8 +76,16 @@ CycleNails(string command)
                 toggleNail=TRUE;
                 OwnerSay(3,"CycleNails","defaultNail="+(string)i);
             };
-            //process lenght-hands
-            //process tatoo
+        };
+        //Identify toggle tattoo
+        if (configurationItem=="hand-tattoo")
+        {
+            defaultTattoo=llList2Integer(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),1);
+            if (llList2Float(llGetLinkPrimitiveParams(LINK_THIS,[PRIM_COLOR, defaultTattoo]),1)==1.0)
+            {
+                toggleTattoo=TRUE;
+                OwnerSay(3,"CycleNails","toggleTattoo=TRUE");
+            };
         };
     };
     //process on-off
@@ -84,6 +95,26 @@ CycleNails(string command)
     //process nail length
     switch(command)
     {
+        case "btn_tattoo_on":
+        {
+            llOwnerSay("btn_tattoo_on");
+            if (toggleTattoo==FALSE)
+            {
+                toggleTattoo=TRUE;
+                OwnerSay(3,"CycleNails","toggleTattoo=TRUE");
+            };
+            break;
+        }
+        case "btn_tattoo_off":
+        {
+            llOwnerSay("btn_tattoo_on");
+            if (toggleTattoo==TRUE)
+            {
+                toggleTattoo=FALSE;
+                OwnerSay(3,"CycleNails","toggleTattoo=FALSE");
+            };
+            break;
+        }
         case "btn_off":
         {
             llOwnerSay("btn_off");
@@ -131,13 +162,23 @@ CycleNails(string command)
     };
     if (toggleNail==TRUE)
     {
-        OwnerSay(3,"CycleNails","Activate Default Nail");
+        OwnerSay(3,"CycleNails","Activate Default Nail on "+(string)defaultNail);
         llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultNail, <1.0, 1.0, 1.0>, 1.0]);
     }
     else
     {
-        OwnerSay(3,"CycleNails","Activate Default Nail");
+        OwnerSay(3,"CycleNails","De-activate Default Nail on "+(string)defaultNail);
         llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultNail, <1.0, 1.0, 1.0>, 0.0]);
+    };
+    if (toggleTattoo==TRUE)
+    {
+        OwnerSay(3,"CycleNails","Tattoo on "+(string)defaultTattoo);
+        llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultTattoo, <1.0, 1.0, 1.0>, 1.0]);
+    }
+    else
+    {
+        OwnerSay(3,"CycleNails","Tattoo off "+(string)defaultTattoo);
+        llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultTattoo, <1.0, 1.0, 1.0>, 0.0]);
     };
 }
 
@@ -151,7 +192,7 @@ ProcessMessage(string textLayer, string textUUID)
         //process texture
         if (llList2String(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),0)==textLayer)
         {
-            OwnerSay(3,"ProcessMessage", "found "+textLayer+" "+llList2String(llList2List(itemConfiguration,i,i),1));
+            OwnerSay(3,"ProcessMessage", "found "+textLayer+" "+llList2String(llList2List(itemConfiguration,i,i),1)+" on "+(string)llList2Integer(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),1));
             llSetTexture((key)textUUID, llList2Integer(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),1)  );
         };
     };

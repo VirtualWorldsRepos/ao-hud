@@ -1,13 +1,13 @@
 <llsd>
     <map>
-    <key>603307695</key>
+    <key>605579724</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>torso-skin-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -263,14 +263,14 @@
                 </map>
             </map>
         </map>
-    <key>603307696</key>
+    <key>605579725</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>head-skin-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -526,14 +526,14 @@
                 </map>
             </map>
         </map>
-    <key>603307697</key>
+    <key>605579726</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>legs-skin-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -789,14 +789,14 @@
                 </map>
             </map>
         </map>
-    <key>603307698</key>
+    <key>605579727</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>head-skin</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -1052,14 +1052,14 @@
                 </map>
             </map>
         </map>
-    <key>603307699</key>
+    <key>605579728</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>torso-skin</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -1315,14 +1315,14 @@
                 </map>
             </map>
         </map>
-    <key>603307700</key>
+    <key>605579729</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>hand-skin-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -1578,14 +1578,14 @@
                 </map>
             </map>
         </map>
-    <key>603307701</key>
+    <key>605579730</key>
         <map>
         <key>description</key>
-            <string>(No Description)</string>
+            <string>5</string>
         <key>name</key>
             <string>hand-skin</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -1841,14 +1841,14 @@
                 </map>
             </map>
         </map>
-    <key>603307702</key>
+    <key>605579731</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>legs-skin</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -2104,14 +2104,14 @@
                 </map>
             </map>
         </map>
-    <key>603307703</key>
+    <key>605579732</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>feet-skin</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -2367,14 +2367,14 @@
                 </map>
             </map>
         </map>
-    <key>603307704</key>
+    <key>605579733</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>feet-skin-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -2630,14 +2630,14 @@
                 </map>
             </map>
         </map>
-    <key>603307705</key>
+    <key>605579734</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>torso-skin-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -2893,14 +2893,14 @@
                 </map>
             </map>
         </map>
-    <key>603307706</key>
+    <key>605579735</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>torso-tattoo-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -3156,14 +3156,14 @@
                 </map>
             </map>
         </map>
-    <key>603307707</key>
+    <key>605579736</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>head-skin-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -3419,14 +3419,14 @@
                 </map>
             </map>
         </map>
-    <key>603307708</key>
+    <key>605579737</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>legs-skin-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -3682,14 +3682,14 @@
                 </map>
             </map>
         </map>
-    <key>603307709</key>
+    <key>605579738</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>hand-skin-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -3703,9 +3703,9 @@
         <key>rotation</key>
             <array>
                 <real>0</real>
+                <real>0.7071068286895752</real>
                 <real>0</real>
-                <real>0</real>
-                <real>1</real>
+                <real>0.7071068286895752</real>
             </array>
         <key>scale</key>
             <array>
@@ -3945,14 +3945,14 @@
                 </map>
             </map>
         </map>
-    <key>603307710</key>
+    <key>605579739</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>hand-tattoo</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -4208,14 +4208,14 @@
                 </map>
             </map>
         </map>
-    <key>603307711</key>
+    <key>605579740</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>torso-tattoo</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -4471,14 +4471,14 @@
                 </map>
             </map>
         </map>
-    <key>603307712</key>
+    <key>605579741</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>backpane</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -4734,14 +4734,14 @@
                 </map>
             </map>
         </map>
-    <key>603307713</key>
+    <key>605579742</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>hand-tattoo-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -4997,14 +4997,14 @@
                 </map>
             </map>
         </map>
-    <key>603307714</key>
+    <key>605579743</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>legs-tattoo-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -5260,14 +5260,14 @@
                 </map>
             </map>
         </map>
-    <key>603307715</key>
+    <key>605579744</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>feet-skin-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -5281,9 +5281,9 @@
         <key>rotation</key>
             <array>
                 <real>0</real>
+                <real>0.7071068286895752</real>
                 <real>0</real>
-                <real>0</real>
-                <real>1</real>
+                <real>0.7071068286895752</real>
             </array>
         <key>scale</key>
             <array>
@@ -5523,14 +5523,14 @@
                 </map>
             </map>
         </map>
-    <key>603307716</key>
+    <key>605579745</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>feet-tattoo</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -5786,14 +5786,14 @@
                 </map>
             </map>
         </map>
-    <key>603307717</key>
+    <key>605579746</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>legs-tattoo</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -6049,14 +6049,14 @@
                 </map>
             </map>
         </map>
-    <key>603307718</key>
+    <key>605579747</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>feet-tattoo-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -6312,14 +6312,14 @@
                 </map>
             </map>
         </map>
-    <key>603307719</key>
+    <key>605579748</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>r-arm-tattoo-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -6575,14 +6575,14 @@
                 </map>
             </map>
         </map>
-    <key>603307720</key>
+    <key>605579749</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>hand-tattoo-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -6596,9 +6596,9 @@
         <key>rotation</key>
             <array>
                 <real>0</real>
+                <real>0.7071068286895752</real>
                 <real>0</real>
-                <real>0</real>
-                <real>1</real>
+                <real>0.7071068286895752</real>
             </array>
         <key>scale</key>
             <array>
@@ -6838,14 +6838,14 @@
                 </map>
             </map>
         </map>
-    <key>603307721</key>
+    <key>605579750</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>torso-tattoo-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -7101,14 +7101,14 @@
                 </map>
             </map>
         </map>
-    <key>603307722</key>
+    <key>605579751</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>l-arm-tattoo</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -7364,14 +7364,14 @@
                 </map>
             </map>
         </map>
-    <key>603307723</key>
+    <key>605579752</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>r-arm-tattoo</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -7627,14 +7627,14 @@
                 </map>
             </map>
         </map>
-    <key>603307724</key>
+    <key>605579753</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>l-arm-tattoo-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -7890,14 +7890,14 @@
                 </map>
             </map>
         </map>
-    <key>603307725</key>
+    <key>605579754</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>feet-tattoo-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -8153,14 +8153,14 @@
                 </map>
             </map>
         </map>
-    <key>603307726</key>
+    <key>605579755</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>legs-tattoo-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -8416,14 +8416,14 @@
                 </map>
             </map>
         </map>
-    <key>603307727</key>
+    <key>605579756</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>undershirt-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -8679,14 +8679,14 @@
                 </map>
             </map>
         </map>
-    <key>603307728</key>
+    <key>605579757</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>l-arm-tattoo-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -8942,14 +8942,14 @@
                 </map>
             </map>
         </map>
-    <key>603307729</key>
+    <key>605579758</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>r-arm-tattoo-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -9205,14 +9205,14 @@
                 </map>
             </map>
         </map>
-    <key>603307730</key>
+    <key>605579759</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>hand-nail</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -9468,14 +9468,14 @@
                 </map>
             </map>
         </map>
-    <key>603307731</key>
+    <key>605579760</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>undershirt</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -9731,14 +9731,14 @@
                 </map>
             </map>
         </map>
-    <key>603307732</key>
+    <key>605579761</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>hand-nail-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -9994,14 +9994,14 @@
                 </map>
             </map>
         </map>
-    <key>603307733</key>
+    <key>605579762</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>underpants-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -10257,14 +10257,14 @@
                 </map>
             </map>
         </map>
-    <key>603307734</key>
+    <key>605579763</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>feet-nail</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -10520,14 +10520,14 @@
                 </map>
             </map>
         </map>
-    <key>603307735</key>
+    <key>605579764</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>hand-nail-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -10783,14 +10783,14 @@
                 </map>
             </map>
         </map>
-    <key>603307736</key>
+    <key>605579765</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>underpants</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -11046,14 +11046,14 @@
                 </map>
             </map>
         </map>
-    <key>603307737</key>
+    <key>605579766</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>undershirt-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -11309,14 +11309,14 @@
                 </map>
             </map>
         </map>
-    <key>603307738</key>
+    <key>605579767</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>feet-nail-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -11572,14 +11572,14 @@
                 </map>
             </map>
         </map>
-    <key>603307739</key>
+    <key>605579768</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>shirt-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -11835,14 +11835,14 @@
                 </map>
             </map>
         </map>
-    <key>603307740</key>
+    <key>605579769</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>feet-nail-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -12098,14 +12098,14 @@
                 </map>
             </map>
         </map>
-    <key>603307741</key>
+    <key>605579770</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>feet-stock</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -12361,14 +12361,14 @@
                 </map>
             </map>
         </map>
-    <key>603307742</key>
+    <key>605579771</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>shirt</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -12624,14 +12624,14 @@
                 </map>
             </map>
         </map>
-    <key>603307743</key>
+    <key>605579772</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>underpants-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -12887,14 +12887,14 @@
                 </map>
             </map>
         </map>
-    <key>603307744</key>
+    <key>605579773</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>feet-stock-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -13150,14 +13150,14 @@
                 </map>
             </map>
         </map>
-    <key>603307745</key>
+    <key>605579774</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>pants-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -13413,14 +13413,14 @@
                 </map>
             </map>
         </map>
-    <key>603307746</key>
+    <key>605579775</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>feet-stock-status</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -13676,14 +13676,14 @@
                 </map>
             </map>
         </map>
-    <key>603307747</key>
+    <key>605579776</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>delete-textures</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -13939,14 +13939,14 @@
                 </map>
             </map>
         </map>
-    <key>603307748</key>
+    <key>605579777</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>pants</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -14202,14 +14202,14 @@
                 </map>
             </map>
         </map>
-    <key>603307749</key>
+    <key>605579778</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>shirt-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -14465,14 +14465,14 @@
                 </map>
             </map>
         </map>
-    <key>603307750</key>
+    <key>605579779</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>apply-all</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -14728,14 +14728,14 @@
                 </map>
             </map>
         </map>
-    <key>603307751</key>
+    <key>605579780</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>pants-text</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -14991,14 +14991,14 @@
                 </map>
             </map>
         </map>
-    <key>603307752</key>
+    <key>605579781</key>
         <map>
         <key>description</key>
             <string>(No Description)</string>
         <key>name</key>
             <string>documentation</string>
         <key>parent</key>
-            <string>603307753</string>
+            <string>605579782</string>
         <key>phantom</key>
             <integer>0</integer>
         <key>physical</key>
@@ -15254,7 +15254,7 @@
                 </map>
             </map>
         </map>
-    <key>603307753</key>
+    <key>605579782</key>
         <map>
         <key>attach</key>
             <integer>34</integer>
