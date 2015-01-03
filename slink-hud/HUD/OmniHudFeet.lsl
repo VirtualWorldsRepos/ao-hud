@@ -31,7 +31,7 @@ default
             integer channel = (integer)("0x"+llGetSubString((string)llGetOwner(),-16,-1));
         
             key uuid = llGetInventoryKey(llToUpper(llGetLinkName(llDetectedLinkNumber(0))));
-            llSay(channel, "hands-util,"+llGetLinkName(llDetectedLinkNumber(0)));        
+            llSay(channel, "feet-util,"+llGetLinkName(llDetectedLinkNumber(0)));        
         };
     }
 }

@@ -22,7 +22,7 @@ integer toggleTattoo=FALSE;
 // 2 - Info
 // 3 - Debug
 // 4 - Extreme Debug
-integer defaultLevel=4;
+integer defaultLevel=2;
 
 Initialization()
 {
@@ -59,8 +59,11 @@ ProcessConfiguration(string data) {
         notecardQueryId = llGetNotecardLine(configurationNotecardName, notecardLine);
     }; 
 }
-CycleNails(string command)
-{ 
+
+ProcessMessage(string command) 
+{
+    OwnerSay(3,"ProcessMessage", command);
+    //process utilities
     integer i;
     for (i=0;i<itemConfigurationCount;i++)
     {
@@ -97,7 +100,7 @@ CycleNails(string command)
     {
         case "btn_tattoo_on":
         {
-            llOwnerSay("btn_tattoo_on");
+            OwnerSay(3,"CycleNails","btn_tattoo_on");
             if (toggleTattoo==FALSE)
             {
                 toggleTattoo=TRUE;
@@ -107,7 +110,7 @@ CycleNails(string command)
         }
         case "btn_tattoo_off":
         {
-            llOwnerSay("btn_tattoo_on");
+            OwnerSay(3,"CycleNails","btn_tattoo_on");
             if (toggleTattoo==TRUE)
             {
                 toggleTattoo=FALSE;
@@ -117,7 +120,7 @@ CycleNails(string command)
         }
         case "btn_off":
         {
-            llOwnerSay("btn_off");
+            OwnerSay(3,"CycleNails","btn_off");
             if (toggleNail==TRUE)
             {
                 toggleNail=FALSE;
@@ -135,28 +138,28 @@ CycleNails(string command)
             
             llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultNail, <1.0, 1.0, 1.0>, 0.0]);
             defaultNail=1;
-            llOwnerSay("btn_short");
+            OwnerSay(3,"CycleNails","btn_short");
             break;
         }
         case "btn_medium":
         {
             llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultNail, <1.0, 1.0, 1.0>, 0.0]);
             defaultNail=4;
-            llOwnerSay("btn_medium");
+            OwnerSay(3,"CycleNails","btn_medium");
             break;
         }
         case "btn_long":
         {
             llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultNail, <1.0, 1.0, 1.0>, 0.0]);
             defaultNail=2;
-            llOwnerSay("btn_long");
+            OwnerSay(3,"CycleNails","btn_long");
             break;
         }
         case "btn_pointed":
         {
             llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultNail, <1.0, 1.0, 1.0>, 0.0]);
             defaultNail=3;
-            llOwnerSay("btn_pointed");
+            OwnerSay(3,"CycleNails","btn_pointed");
             break;
         }
     };
@@ -180,28 +183,7 @@ CycleNails(string command)
         OwnerSay(3,"CycleNails","Tattoo off "+(string)defaultTattoo);
         llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultTattoo, <1.0, 1.0, 1.0>, 0.0]);
     };
-}
-
-ProcessMessage(string textLayer, string textUUID) 
-{
-    integer i;
-    OwnerSay(3,"ProcessMessage", textLayer);
-    for (i=0;i<itemConfigurationCount;i++)
-    {
-        OwnerSay(3,"ProcessMessage", textLayer+" "+llList2String(llList2List(itemConfiguration,i,i),0));
-        //process texture
-        if (llList2String(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),0)==textLayer)
-        {
-            OwnerSay(3,"ProcessMessage", "found "+textLayer+" "+llList2String(llList2List(itemConfiguration,i,i),1)+" on "+(string)llList2Integer(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),1));
-            llSetTexture((key)textUUID, llList2Integer(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),1)  );
-        };
-    };
-    //process utilities
-    if ("nails-util"==textLayer)
-    {
-        OwnerSay(3,"ProcessMessage", "found "+textLayer+" "+llList2String(llList2List(itemConfiguration,i,i),1));
-        CycleNails(textUUID);
-    };
+    llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, 0, <1.0, 1.0, 1.0>, 1.0]);    
 }
 default
 {
@@ -239,12 +221,14 @@ default
     listen(integer channel, string name, key id, string msg)
     {
         list message =  llParseString2List(msg,[","],[" "]);
-        OwnerSay(3,"default.listen",msg);
-        ProcessMessage(llList2String(message,0),llList2String(message,1));
-        
+        if (llList2String(message,0)=="hands-util")
+        {
+            OwnerSay(3,"default.listen",msg);
+            ProcessMessage(llList2String(message,1));
+        };
     }
     dataserver(key request_id, string data)
     {
         if (request_id == notecardQueryId) ProcessConfiguration(data);
     }    
-} 
+}
