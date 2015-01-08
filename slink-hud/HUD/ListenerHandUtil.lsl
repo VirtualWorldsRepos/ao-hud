@@ -11,8 +11,8 @@ key notecardQueryId;
 integer notecardLine;
 list itemConfiguration=[];
 integer itemConfigurationCount=0;
-integer defaultNail;
-integer defaultTattoo;
+integer defaultNail=2;
+integer defaultTattoo=5;
 integer toggleNail=FALSE;
 integer toggleTattoo=FALSE;
 
@@ -69,7 +69,7 @@ ProcessMessage(string command)
     {
         string configurationItem=llList2String(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),0);
         integer face=llList2Integer(llParseString2List(llList2String(itemConfiguration,i),[","],[" "]),1);
-        OwnerSay(3,"CycleNails",configurationItem);
+        OwnerSay(3,"ProcessMessage",configurationItem);
         //Identify default nail
         if (llGetSubString(configurationItem,-5,-1)=="-nail")
         {
@@ -77,7 +77,7 @@ ProcessMessage(string command)
             {
                 defaultNail=i;
                 toggleNail=TRUE;
-                OwnerSay(3,"CycleNails","defaultNail="+(string)i);
+                OwnerSay(3,"ProcessMessage","defaultNail="+(string)i);
             };
         };
         //Identify toggle tattoo
@@ -87,100 +87,90 @@ ProcessMessage(string command)
             if (llList2Float(llGetLinkPrimitiveParams(LINK_THIS,[PRIM_COLOR, defaultTattoo]),1)==1.0)
             {
                 toggleTattoo=TRUE;
-                OwnerSay(3,"CycleNails","toggleTattoo=TRUE");
+                OwnerSay(3,"ProcessMessage","toggleTattoo=TRUE");
             };
         };
     };
     //process on-off
-    if (command=="btn_off")
-    {
-    };
     //process nail length
     switch(command)
     {
         case "btn_tattoo_on":
         {
-            OwnerSay(3,"CycleNails","btn_tattoo_on");
-            if (toggleTattoo==FALSE)
-            {
-                toggleTattoo=TRUE;
-                OwnerSay(3,"CycleNails","toggleTattoo=TRUE");
-            };
+            OwnerSay(3,"ProcessMessage","btn_tattoo_on");
+            toggleTattoo=TRUE;
+            OwnerSay(3,"ProcessMessage","toggleTattoo=TRUE");
             break;
         }
         case "btn_tattoo_off":
         {
-            OwnerSay(3,"CycleNails","btn_tattoo_on");
-            if (toggleTattoo==TRUE)
-            {
-                toggleTattoo=FALSE;
-                OwnerSay(3,"CycleNails","toggleTattoo=FALSE");
-            };
+            OwnerSay(3,"ProcessMessage","btn_tattoo_on");
+            toggleTattoo=FALSE;
+            OwnerSay(3,"ProcessMessage","toggleTattoo=FALSE");
             break;
         }
         case "btn_off":
         {
-            OwnerSay(3,"CycleNails","btn_off");
+            OwnerSay(3,"ProcessMessage","btn_off");
             if (toggleNail==TRUE)
             {
                 toggleNail=FALSE;
-                OwnerSay(3,"CycleNails","toggleNail=FALSE");
+                OwnerSay(3,"ProcessMessage","toggleNail=FALSE");
             }
             else
             {
                 toggleNail=TRUE;
-                OwnerSay(3,"CycleNails","toggleNail=TRUE");
+                OwnerSay(3,"ProcessMessage","toggleNail=TRUE");
             };
             break;
         }
         case "btn_short":
-        {
-            
+        {    
             llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultNail, <1.0, 1.0, 1.0>, 0.0]);
             defaultNail=1;
-            OwnerSay(3,"CycleNails","btn_short");
+            OwnerSay(3,"ProcessMessage","btn_short");
             break;
         }
         case "btn_medium":
         {
             llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultNail, <1.0, 1.0, 1.0>, 0.0]);
             defaultNail=4;
-            OwnerSay(3,"CycleNails","btn_medium");
+            OwnerSay(3,"ProcessMessage","btn_medium");
             break;
         }
         case "btn_long":
         {
             llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultNail, <1.0, 1.0, 1.0>, 0.0]);
             defaultNail=2;
-            OwnerSay(3,"CycleNails","btn_long");
+            OwnerSay(3,"ProcessMessage","btn_long");
             break;
         }
         case "btn_pointed":
         {
             llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultNail, <1.0, 1.0, 1.0>, 0.0]);
             defaultNail=3;
-            OwnerSay(3,"CycleNails","btn_pointed");
+            OwnerSay(3,"ProcessMessage","btn_pointed");
             break;
         }
     };
     if (toggleNail==TRUE)
     {
-        OwnerSay(3,"CycleNails","Activate Default Nail on "+(string)defaultNail);
+        OwnerSay(3,"ProcessMessage","Activate Default Nail on "+(string)defaultNail);
         llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultNail, <1.0, 1.0, 1.0>, 1.0]);
     }
     else
     {
-        OwnerSay(3,"CycleNails","De-activate Default Nail on "+(string)defaultNail);
+        OwnerSay(3,"ProcessMessage","De-activate Default Nail on "+(string)defaultNail);
         llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultNail, <1.0, 1.0, 1.0>, 0.0]);
     };
     if (toggleTattoo==TRUE)
     {
-        OwnerSay(3,"CycleNails","Tattoo on "+(string)defaultTattoo);
+        OwnerSay(3,"ProcessMessage","Tattoo on "+(string)defaultTattoo);
         llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultTattoo, <1.0, 1.0, 1.0>, 1.0]);
     }
     else
     {
-        OwnerSay(3,"CycleNails","Tattoo off "+(string)defaultTattoo);
+        OwnerSay(3,"ProcessMessage","Tattoo off "+(string)defaultTattoo);
         llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, defaultTattoo, <1.0, 1.0, 1.0>, 0.0]);
     };
     llSetLinkPrimitiveParamsFast(LINK_THIS,[PRIM_COLOR, 0, <1.0, 1.0, 1.0>, 1.0]);    
@@ -231,4 +221,4 @@ default
     {
         if (request_id == notecardQueryId) ProcessConfiguration(data);
     }    
-}
+} 
